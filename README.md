@@ -36,7 +36,6 @@
     - get the Letters as [P E E P 0 P 3 3 P O P]
 
 ---
-
 ### Step 3: Solution
 
 #### Final Steps
@@ -47,18 +46,12 @@
 ELCTF{peep0p33pop}
 ```
 ---
-
 ## 2- pyCrypter
-
 ### Challenge Details
-
 - **Challenge Name**: pyCrypter
 - **Category**: ReverseEngineering
 - **Points**: 70
 - **Description**: [Provide the official description of the challenge]
-
----
-
 ### Step 1: Initial Analysis
 
 #### Observations
@@ -67,43 +60,38 @@ ELCTF{peep0p33pop}
 
 #### Tools Used
 - Python
+###  Step 2: Approach and Execution
+    1. **Step-by-Step Process**
+        - the python code after edit
 
+        ```
+            import base64
+            def mydecode(encryptedFlag, key):
+                decryptedFlag = []
+                for i in range(len(encryptedFlag)):
+                    keyChar = key[i % len(key)]
+                    decChar = (encryptedFlag[i] - ord(keyChar)) % 256
+                    decryptedFlag.append(chr(decChar))
+                return ''.join(decryptedFlag)
+            # Base64 decode the encrypted flag
+            encrypted_data = base64.urlsafe_b64decode("ksXO1MXY2piuxrB-6MHElOXE4nvZ2HGstrrVt-I=")
+            # Decrypt the flag using the same key
+            decrypted_flag = mydecode(encrypted_data, "MySecretKey")
+            print(decrypted_flag)
+        ```
 
----
+    2. **Analysis of Results**
+        - run the python file ``` python pyCrypter.py  ```
 
-## Step 2: Approach and Execution
-
-1. **Step-by-Step Process**
-    - the python code after edit
-
-    ```
-        import base64
-        def mydecode(encryptedFlag, key):
-            decryptedFlag = []
-            for i in range(len(encryptedFlag)):
-                keyChar = key[i % len(key)]
-                decChar = (encryptedFlag[i] - ord(keyChar)) % 256
-                decryptedFlag.append(chr(decChar))
-            return ''.join(decryptedFlag)
-        # Base64 decode the encrypted flag
-        encrypted_data = base64.urlsafe_b64decode("ksXO1MXY2piuxrB-6MHElOXE4nvZ2HGstrrVt-I=")
-        # Decrypt the flag using the same key
-        decrypted_flag = mydecode(encrypted_data, "MySecretKey")
-        print(decrypted_flag)
-    ```
-
-2. **Analysis of Results**
-    - run the python file ``` python pyCrypter.py  ```
-
----
+    ---
 
 #### Flag
 ```
 EL{obfu$ca71on_1s_n0t_$3cUrE}
 ```
----
+## 3- Mother Of All Math
 
-## 1- Mother Of All Math
+
 
 ### Challenge Details
 
@@ -193,8 +181,60 @@ EL{obfu$ca71on_1s_n0t_$3cUrE}
     ```
 
 2. **Analysis of Results**
-    - get the Letters as [P E E P 0 P 3 3 P O P]
+    - run the python file python Mother Of All Math.py 
+    - it will show some error but then get the right flag
+    - If it works, don't touch it :)
 
 ---
 
+#### Flag
+```
+ELCTF{MaTh_!s_NOT_hARd_AFt3R_A1L}
+```
+---
+## 4- weWill
+
+### Challenge Details
+
+- **Challenge Name**: weWill
+- **Category**: Misc
+- **Points**: 10
+- **Description**: [Provide the official description of the challenge]
+
+---
+
+### Step 1: Initial Analysis
+
+#### Observations
+- it looks like zip file need password to extract it
+- so its time to my old Unc 'John' to crack the file and get the password
+
+#### Tools Used
+- zip2john , john, unzip
+
+
+---
+
+### Step 2: Approach and Execution
+
+1. **Step-by-Step Process**
+    - get the hash of the zip file
+    ```
+    zip2john weWill.zip > zipfile.hash
+    ```
+    - use john tool to crack the hash with rockyou.txt file 
+    ```
+    sudo john zipfile.hash --wordlist=/usr/share/wordlist/rockyou.txt
+    ```
+2. **Analysis of Results**
+    - we will get the password of the zip file 'cingular' 
+    - use the passowrd to extract the txt file in zip folder
+
+---
 ### Step 3: Solution
+
+#### Flag
+```
+ELCTF{w3_wIL1_r0Ck_You}
+```
+---
