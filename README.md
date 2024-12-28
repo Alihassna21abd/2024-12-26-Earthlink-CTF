@@ -4,7 +4,7 @@
 
 ### Challenge Details
 
-- **Challenge Name**: exitTool
+- **Challenge Name**: horseCode
 - **Category**: Misc
 - **Points**: 10
 - **Description**: [Provide the official description of the challenge]
