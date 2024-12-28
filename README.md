@@ -132,7 +132,7 @@ ELCTF{peep0p33pop}
         ```
 
 2. **Analysis of Results**
-    - run the python file ```python Mother Of All Math.py``` 
+    - run the python file ```python AllMath.py``` 
     - it will show some error but then get the right flag
     - If it works, don't touch it :)
 
