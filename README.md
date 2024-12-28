@@ -28,10 +28,6 @@
 1. **Step-by-Step Process**
     - uplode the secret.wav file and start to play the sound and decode it
 
-    ```
-    [Example of a command or code snippet]
-    ```
-
 2. **Analysis of Results**
     - get the Letters as [P E E P 0 P 3 3 P O P]
 
