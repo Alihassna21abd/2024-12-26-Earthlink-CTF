@@ -7,7 +7,6 @@
 - **Challenge Name**: horseCode
 - **Category**: Misc
 - **Points**: 10
-- **Description**: [Provide the official description of the challenge]
 
 ---
 
@@ -51,7 +50,6 @@ ELCTF{peep0p33pop}
 - **Challenge Name**: Mother Of All Math
 - **Category**: Misc
 - **Points**: 100
-- **Description**: [Provide the official description of the challenge]
 
 ---
 
@@ -152,7 +150,6 @@ ELCTF{MaTh_!s_NOT_hARd_AFt3R_A1L}
 - **Challenge Name**: weWill
 - **Category**: Misc
 - **Points**: 10
-- **Description**: [Provide the official description of the challenge]
 
 ---
 
@@ -198,7 +195,6 @@ ELCTF{w3_wIL1_r0Ck_You}
 - **Challenge Name**: exitTool
 - **Category**: Misc
 - **Points**: 10
-- **Description**: [Provide the official description of the challenge]
 
 ---
 
@@ -230,7 +226,6 @@ ELCTF{w3_wIL1_r0Ck_You}
 - **Challenge Name**: Arm And Leg
 - **Category**: Misc
 - **Points**: 60
-- **Description**: [Provide the official description of the challenge]
 
 ---
 
@@ -271,7 +266,7 @@ ELCTF{arM$_are_h@nDy}
 - **Challenge Name**: pyCrypter
 - **Category**: ReverseEngineering
 - **Points**: 70
-- **Description**: [Provide the official description of the challenge]
+
 ### Step 1: Initial Analysis
 
 #### Observations
@@ -312,7 +307,7 @@ EL{obfu$ca71on_1s_n0t_$3cUrE}
 - **Challenge Name**: My New Safe
 - **Category**: ReverseEngineering
 - **Points**: 85
-- **Description**: [Provide the official description of the challenge]
+
 ### Step 1: Initial Analysis
 
 #### Observations
@@ -379,7 +374,7 @@ ELCTF{rE_!$_niCE}
 - **Challenge Name**: Little Endian route
 - **Category**: Web
 - **Points**: 15
-- **Description**: [Provide the official description of the challenge]
+
 ### Step 1: Initial Analysis
 
 #### Observations
